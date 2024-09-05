@@ -1,5 +1,5 @@
 const { pool } = require("../services/pg_pool");
-const bcrypt = require("bcrypt");
+const bcrypt = require('bcryptjs');
 
 const TABLE_NAME = "users";
 
