@@ -76,8 +76,6 @@ exports.getAllBooks = async (req, res) => {
     const limit = parseInt(req.query.limit) || 50;
 
     const result = await Model.fetch_all(tb_name, offset, limit);
-    console.log('res', result)
-
     if (result.rows.length === 0) {
       return res.status(404).json({
         success: false,
